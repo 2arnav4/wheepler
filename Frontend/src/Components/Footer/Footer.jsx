@@ -1,8 +1,6 @@
 const ContactUs = () => {
     return (
       <>
-       
-  
         {/* Footer Links Section */}
         <footer className="bg-white py-5 border-top">
           <div className="container">
