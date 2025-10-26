@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styles from './banner.module.css';
+import banner1 from '../../../assets/Banner/1.jpg';
+import banner2 from '../../../assets/Banner/2.jpg';
+import banner3 from '../../../assets/Banner/3.jpg';
+import banner4 from '../../../assets/Banner/4.jpg';
+import banner5 from '../../../assets/Banner/5.jpg';
+import banner6 from '../../../assets/Banner/6.jpg';
 
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,7 +14,7 @@ const Banner = () => {
   const banners = [
     {
       id: 1,
-      image: '/src/assets/Banner/1.jpg',
+      image: banner1,
       title: 'Industrial Tools & Equipment',
       subtitle: 'Get up to 70% OFF on Premium Tools',
       buttonText: 'Shop Now',
@@ -16,7 +22,7 @@ const Banner = () => {
     },
     {
       id: 2,
-      image: '/src/assets/Banner/2.jpg',
+      image: banner2,
       title: 'Electrical & Appliances',
       subtitle: 'Best Deals on Electrical Products',
       buttonText: 'Explore',
@@ -24,7 +30,7 @@ const Banner = () => {
     },
     {
       id: 3,
-      image: '/src/assets/Banner/3.jpg',
+      image: banner3,
       title: 'Safety & Security',
       subtitle: 'Protect Your Workforce',
       buttonText: 'View Products',
@@ -32,7 +38,7 @@ const Banner = () => {
     },
     {
       id: 4,
-      image: '/src/assets/Banner/4.jpg',
+      image: banner4,
       title: 'Office Supplies',
       subtitle: 'Everything for Your Office',
       buttonText: 'Shop Office',
@@ -40,7 +46,7 @@ const Banner = () => {
     },
     {
       id: 5,
-      image: '/src/assets/Banner/5.jpg',
+      image: banner5,
       title: 'Construction Materials',
       subtitle: 'Build with Quality Materials',
       buttonText: 'Browse',
@@ -48,7 +54,7 @@ const Banner = () => {
     },
     {
       id: 6,
-      image: '/src/assets/Banner/7.jpg',
+      image: banner6,
       title: 'Medical & Lab Supplies',
       subtitle: 'Professional Medical Equipment',
       buttonText: 'Shop Medical',

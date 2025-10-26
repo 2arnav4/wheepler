@@ -31,7 +31,7 @@ const Navbar = () => (
             style={{ fontSize: "16px", padding: "12px 16px" }}
           />
           <button className="btn btn-primary" type="submit" style={{ padding: "12px 24px" }}>
-            Search
+          d-flex mx-auto
           </button>
         </form>
 
