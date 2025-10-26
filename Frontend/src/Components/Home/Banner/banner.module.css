@@ -23,13 +23,13 @@
 .bannerImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+  object-fit: fit;
+  /* transition: transform 0.3s ease; */
 }
 
-.bannerSlide:hover .bannerImage {
+/* .bannerSlide:hover .bannerImage {
   transform: scale(1.05);
-}
+} */
 
 /* Banner overlay and content styles removed - banners are now fully clickable */
 
