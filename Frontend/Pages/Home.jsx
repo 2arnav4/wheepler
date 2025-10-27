@@ -1,21 +1,25 @@
 import React from "react";
 import Banner from "../src/Components/Home/Banner/Banner";
 import Categories from "../src/Components/Home/Categories/Categories";
-// import Slider from '../src/Components/Home/Slider/Slider';
+import ElectricalAppliances from "../src/Components/Home/Categories/ElectricalAppliances/ElectricalAppliances";
+import HardwareAccessories from "../src/Components/Home/Categories/HardwareAccessories/HardwareAccessories";
+import HomeAppliance from "../src/Components/Home/Categories/HomeAppliance/HomeAppliance";
+import PlumbingHardware from "../src/Components/Home/Categories/PlumbingHardware/PlumbingHardware";
+
+
 
 const Home = () => {
   return (
     <div className="home-page">
-      {/* Auto-rotating Banner Section */}
-      <section className="banner-section">
-        <Banner />
-      </section>
-
-      {/* Browse All Categories Section */}
-      <section className="categories-section">
-        <Categories />
-      </section>
+      <Banner />
+      <Categories />
+      <ElectricalAppliances />
+      <HardwareAccessories />
+      <HomeAppliance />
+      <PlumbingHardware />
     </div>
+
+    
   );
 };
 
