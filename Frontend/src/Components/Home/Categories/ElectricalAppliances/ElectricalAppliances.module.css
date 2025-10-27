@@ -1,0 +1,211 @@
+/* Main section container */
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+/* Header: "ELECTRICALS" and "View All" */
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.viewAll {
+  background: none;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.viewAll:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* This is the new 3-column flex wrapper */
+.contentWrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  gap: 1.5rem;
+}
+
+/* --- Column 1: Brands --- */
+.brandsContainer {
+  flex: 1;
+  min-width: 200px;
+  border-right: 1px solid #f0f0f0;
+  padding-right: 1.5rem;
+}
+
+.columnTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.brandRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.brandCard {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #fafafa;
+}
+
+.brandCard p {
+  margin: 0.25rem 0 0 0;
+}
+
+.brandImage {
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* --- Column 2: Top Categories --- */
+.topCategoriesContainer {
+  flex: 1.5;
+  min-width: 250px;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.categoryCard {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: box-shadow 0.2s ease;
+}
+
+.categoryCard:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categoryCard p {
+  margin: 0.5rem 0 0 0;
+}
+
+.categoryImage {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* --- Column 3: Products --- */
+.productsContainer {
+  flex: 3; /* Takes up the most space */
+  min-width: 300px;
+  overflow-x: hidden; /* Hides the scrollbar from the container */
+}
+
+/* This makes the grid scroll horizontally */
+.productsGrid {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem; /* Space for scrollbar */
+}
+
+/* Moglix-style Product Card */
+.productCard {
+  flex: 0 0 180px; /* Fixed width for each card */
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #ffffff;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.productCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.productInfo {
+  padding: 0.75rem;
+}
+
+.rating {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0 0 0.25rem 0;
+}
+
+.productName {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.3;
+  height: 3.4em; /* Limits to ~3 lines of text */
+  overflow: hidden;
+  margin: 0 0 0.5rem 0;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #212121;
+}
+
+.oldPrice {
+  font-size: 0.8rem;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.discount {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #388e3c; /* Green for discount */
+  margin: 0;
+}

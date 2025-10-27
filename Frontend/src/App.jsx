@@ -1,18 +1,28 @@
-import Navbar from './Components/Header/Navbar'
-import SubNavbar from './Components/Header/SubNavbar' // 1. Import the new component
-import Home from '../Pages/Home.jsx' // Make sure Home is imported if it's not already
-import Footer from './Components/Footer/Footer'
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Header/Navbar";
+import SubNavbar from "./Components/Header/SubNavbar";
+import Footer from "./Components/Footer/Footer";
+import Home from "../Pages/Home"; // adjust this path if needed
+
+import "./App.css";
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <SubNavbar /> {/* 2. Add it right after the Navbar */}
-      <Home /> {/* 3. Your home page content will render below it */}
+      <SubNavbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        {/* Add more routes here later, e.g.
+            <Route path="/about" element={<About />} /> */}
+      </Routes>
+
       <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
