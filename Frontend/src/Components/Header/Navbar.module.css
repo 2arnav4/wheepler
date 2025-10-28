@@ -1,140 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .navbar {
-    background-color: var(--bs-body-bg, #f8f9fa);
-    height: 70px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 0;
+  background-color: var(--bs-body-bg, #f8f9fa);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
 }
 
 .navContainer {
-    margin: 0 auto 0 44px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 0;
-    padding-right: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px; /* tighter horizontal spacing */
 }
 
 .brand {
-    font-weight: 700;
-    font-size: 22px;
-    color: #000;
-    text-decoration: none;
-    margin-left: 0;
+  font-weight: 700;
+  font-size: 22px;
+  color: #000;
+  text-decoration: none;
+  margin-right: 24px; /* small space after logo */
 }
 
 .searchForm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 700px;
+  margin: 0 24px; /* reduce gap between logo and icons */
 }
 
 .searchInput {
-    flex: 1;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    outline: none;
-    transition: border-color 0.2s ease;
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
 }
 
 .searchInput:focus {
-    border-color: #007bff;
+  border-color: #007bff;
 }
 
 .searchButton {
-    padding: 12px 24px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
 }
 
 .searchButton:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .iconList {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* smaller gaps between icons */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .iconItem {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 0;
-    padding: 6px 10px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 2.5px; /* tighter text-icon spacing */
+  cursor: pointer;
 }
 
-/* Moglix-matching icon size - smaller and more compact */
 .icon {
-    font-size: 16px;
-    color: #3C3C3C;
-    transition: color 0.2s ease;
-    flex-shrink: 0;
+  font-size: 17px;
+  color: #3C3C3C;
+  transition: color 0.2s ease;
 }
 
-/* Moglix-matching text size - 14px regular weight */
 .iconLink {
-    font-family: 'Roboto', sans-serif;
-    padding: 0 0 0 10px;
-    margin-right: 28px;
-    text-decoration: none;
-    color: #3C3C3C;
-    font-size: 18px;
-    font-weight: 600;
-    transition: color 0.2s ease;
-    white-space: nowrap;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #3C3C3C;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .iconItem:hover .icon,
 .iconItem:hover .iconLink {
-    color: #007bff;
+  color: #007bff;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
-    .iconList {
-        gap: 1.2rem;
-    }
+  .searchForm {
+    max-width: 500px;
+  }
 
-    .icon {
-        font-size: 15px;
-    }
+  .iconList {
+    gap: 0.8rem;
+  }
 
-    .iconLink {
-        font-size: 13px;
-    }
+  .iconLink {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 768px) {
-    .iconList {
-        gap: 1rem;
-    }
+  .iconLink {
+    display: none;
+  }
 
-    .iconLink {
-        display: none;
-    }
-
-    .icon {
-        font-size: 20px;
-    }
+  .icon {
+    font-size: 20px;
+  }
 }
